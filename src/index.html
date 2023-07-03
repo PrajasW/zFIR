@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./scripts.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/6.6.2/ethers.umd.min.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Report FIR</a></li>
+            <li><a href="verify.html">Verify</a></li>
+            <li><a href="query.html">Query</a></li>
+            <li><a href="Citizen.html">Add Citizen</a></li>
+        </ul>
+    </nav>
+
+    <button id="connectButton">Connect to Wallet</button>
+    <h1 class="heading">FILE FIR</h1>
+    <form id="myForm">
+        <label for="pincode">Pin Code:</label>
+        <input type="text" id="pincode" name="pincode" required>
+        <p id="pincodeError" class="error"></p>
+
+        <label for="textString">Text String:</label>
+        <input type="text" id="textString" name="textString" required>
+        <p id="textStringError" class="error"></p>
+
+        <button type="submit">Submit</button>
+    </form>
+    <div id="error"></div>
+    <div id="success"></div>
+</body>
+</html>
