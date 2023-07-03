@@ -187,7 +187,7 @@ async function verifyReport(number){
         success.innerHTML = `Transaction in progress...`
         success.innerHTML += `<br>transaction hash : ${await tx.hash}`;
         await tx.wait();
-        success.innerHTML += `######### CITIZEN ADDED #########`;
+        success.innerHTML += `<br>######### FIR Verified #########`;
     }
     catch(err){
         error.innerHTML = err;
