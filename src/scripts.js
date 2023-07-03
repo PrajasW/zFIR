@@ -246,7 +246,7 @@ async function reportFIR(){
         success.innerHTML += `<br>Transaction Hash : ${await tx.hash}`;
         success.innerHTML += `<br>Transaction in progress....`;
         await tx.wait();
-        success.innerHTML += `<br>FIR Report Number : ${(parseInt((await contract.totalReports()).toString()))-1}`;
+        success.innerHTML += `<br>FIR Report Number : ${parseInt((await contract.totalReports()).toString())}`;
         success.innerHTML += `<br>######## FIR RECORDED ########`;
     }
     catch(err){
