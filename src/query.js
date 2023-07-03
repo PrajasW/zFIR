@@ -18,7 +18,7 @@ numberForm.addEventListener("submit", async function(event) {
 
 async function queryReport(number){
     console.log(`inside query`)
-    const contractAddress = "0xc75b4A40cb9600f9D2f7ef4fB883735c92351Cf9";
+    const contractAddress = "0xD729B59fFcb98FbFF0cbfAb797DE7141390EB741";
     const contractABI = [
         {
           "inputs": [],
