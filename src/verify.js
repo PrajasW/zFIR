@@ -1,11 +1,11 @@
-const numberForm = document.getElementById("numberForm");
-const numberInput = document.getElementById("numberInput");
+const reportNumberForm = document.getElementById("reportNumberForm");
+const reportNumberInput = document.getElementById("reportNumberInput");
 const resultDiv = document.getElementById("result");
 
-numberForm.addEventListener("submit", async function(event) {
+reportNumberForm.addEventListener("submit", async function(event) {
     event.preventDefault();
 
-    const number = parseInt(numberInput.value.trim());
+    const number = parseInt(reportNumberInput.value.trim());
 
     // Clear previous result
     resultDiv.textContent = "";
@@ -13,7 +13,7 @@ numberForm.addEventListener("submit", async function(event) {
     // Check if the entered value is a valid number
     await verifyReport(number);
     // Clear the input field
-    numberInput.value = "";
+    reportNumberInput.value = "";
 });
 
 async function verifyReport(number){
